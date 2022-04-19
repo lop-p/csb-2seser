@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../App.svelte",
+    "../Button.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n\timport Button from \"./Button.svelte\";\n</script>\n\n<style>\n  main {\n    font-family: sans-serif;\n    text-align: center;\n  }\n</style>\n\n<main>\n  <title>CLICK.</title>\n\t<h1>Seser Click.</h1>\n\t<Button />\n</main>",
+    "<script>\n\tlet count = 0;\n\n\tfunction handleClick() {\n\t  console.log(\"clicks\");\n\t  count += 1;\n\t}\n\n\tif (count == 100) {\n\t  console.log(\"100!\");\n\t}\n</script>\n\n<style>\n\tbutton {\n\t  background: rebeccapurple;\n\t  color: black;\n\t  border: purple;\n\t  padding: 400px 300px;\n\t  border-radius: 20px;\n\t  font-size: 100px;\n\t}\n</style>\n\n<button on:click={handleClick}>\n  Score: {count}\n</button>"
+  ],
+  "names": [],
+  "mappings": "AAKE,IAAI,eAAC,CAAC,AACJ,WAAW,CAAE,UAAU,CACvB,UAAU,CAAE,MAAM,AACpB,CAAC;ACMF,MAAM,eAAC,CAAC,AACN,UAAU,CAAE,aAAa,CACzB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,MAAM,CACd,OAAO,CAAE,KAAK,CAAC,KAAK,CACpB,aAAa,CAAE,IAAI,CACnB,SAAS,CAAE,KAAK,AAClB,CAAC"
+}
